@@ -1,0 +1,12 @@
+<h1> The results of all the search </h1>
+<a href="/"> search again </a>
+<% data["Search"].forEach( function(movie){ %>
+    <div>
+        <hr>
+            <h3> <span> <%= movie.Title %> </span> -directed in: <%= movie.Year  %> </h3>
+            <img src="<%= movie.Poster %>" alt="movie_name">
+        <hr>
+    </div>
+<% }); %>
+
+
